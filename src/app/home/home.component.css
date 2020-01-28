@@ -1,0 +1,30 @@
+/* .carousel
+{
+  position: relative;
+  margin: auto;
+  height: 200px;
+  width: 600px;
+  left: 0px;
+  top: 100px;
+} */
+.row-centered {
+    text-align:center;
+  }
+  .col-centered {
+    display:inline-block;
+    float:none;
+    text-align:left;
+    margin-right:-4px;
+  }
+  .pos{
+    position: relative;
+    top: 240px;
+  }
+  .bk
+  {
+    background-image: url(../../assets/imgages/orphan1.jpg);
+    width: 100%;
+    height: 100vh;   
+    background-size:cover;
+    background-blend-mode: soft-light;
+  }

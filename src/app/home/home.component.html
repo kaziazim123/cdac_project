@@ -1,0 +1,133 @@
+
+
+    
+  <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <b><a style="cursor: pointer;color: white" class="navbar-brand">Save the Children</a></b> 
+              <ul class="nav navbar-nav">
+                         <li><a routerLink="/home">Home</a> </li>
+                         <li><a routerLink="/about">About us</a></li>
+                         <li><a routerLink="/donation">Donate</a></li>
+                       
+                 </ul>
+                 <ul class="nav navbar-nav nav navbar-right">
+                  <li><a routerLink="/login">login</a> </li>
+                  <li><a routerLink="/register">register</a></li>
+                 </ul>
+         </div>
+              
+  </nav>
+
+
+
+<!-- <div >
+ <router-outlet></router-outlet>
+</div> -->
+
+
+
+
+
+<div class="bk">
+  <br><br><br><br><br><br>
+  <div class="container">
+          <div style="background-color: transparent" class="row row-centered pos">
+          </div>
+  </div>
+</div>
+<br><br>
+
+<!-- Container (Info Section) -->
+<div id="band" class="container text-center">
+<br>
+<h1>Save the Children Foundation</h1>
+<br><br>
+<p>
+  Save the Children is a global non-profit organisation which was founded in the year 1919. Today, it is India's leading independent child rights NGO. As of December 2018, we work in 19 states of India. Started in 2008 in India, and registered as 'Bal Raksha Bharat', we have changed the lives of more than 10.1 million (1.1 crore) children till date. In the year 2018, we reached 12.03 lakh children.
+
+Save the Children believes that every child deserves the best chance for a bright future and that’s why we are fiercely committed towards ensuring that children not only survive, but thrive. We run programmes in the remotest corners of India and urban areas to provide quality education and healthcare, protection from harm and abuse and life-saving aid during emergencies to children. Globally, Save the Children is present in more than 80 countries and works to improve the lives of the most vulnerable children living there.
+
+Every child deserves the best chance for a bright future. And that’s why we are fiercely committed to ensuring children not only survive, but thrive. Bold in our ambition and powerful in our care, we do whatever it takes to save the world’s children.
+
+In India and around the world, Save the Children is on the ground – every day and in times of crisis. Our pioneering programmes address children’s unique needs, giving them a healthy start, the opportunity to learn and protection from harm. When crisis strikes, we are always among the first to respond and the last to leave. We are outspoken champions for children, ensuring their voices are heard and their issues are given top priority. Drawing on a century of leading expertise, we take on the toughest challenges facing the hardest-to-reach children – especially those unfairly excluded from the world’s progress.
+
+We are proud to be the world’s leading expert on children, delivering lasting results for millions of vulnerable girls and boys. By saving the world’s children, we transform their lives and the future we share.
+</p>
+</div>
+
+
+
+<div id="children" class="container text-center">
+<h3></h3>
+<br>
+<p>Save the children educates families about foster care and adoption and gives child welfare professionals information and support to help them improve their services. We also maintain the nation’s only federally funded photolisting service that connects waiting children with families.
+
+  Our mission:
+  
+  Raise public awareness about the need for foster and adoptive families for children in the public child welfare system
+  Assist US states, territories, and tribes to recruit, engage, develop and support foster and adoptive families</p>
+  <p><br><br>
+      We help families with the adoption process—every step of the way:
+
+      We answer questions from families who are exploring foster care and adoption online and over the phone.
+      We help families who are approved to adopt search for children on our national photolisting and make inquiries directly to the children’s caseworkers.
+      We connect a community of more than 200,000 families online through our Facebook page and Twitter channel
+  </p>
+
+  <p>
+      Through a partnership with the Ad Council, we produce a public service campaign to raise
+       awareness of adoption from foster care. Now in its fifteenth year, the theme of the current
+        campaign is “You can’t imagine the reward” and highlights the many reasons to adopt a teen.
+
+  </p>
+<br><br>
+<h2>Adopt a child</h2>
+<br><br>
+<div id="donate" class="container">
+<h2 class="text-center">Donate</h2>
+<br>
+<div class="row">
+  <div class="col-md-4">
+    <p><span class="glyphicon glyphicon-map-marker"></span>Pune , Maharashtra</p>
+    <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 9907207687</p>
+    <p><span class="glyphicon glyphicon-envelope"></span>Email: aamir@mail.com</p>
+    <p><span class=""></span>Account no : 20720899</p>
+    <p><span class=""></span>Ifsc code : IFSC 5000</p>
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-sm-6 form-group">
+        <input class="form-control" id="name" [(ngModel)]="Donation.name" name="name" placeholder="Name" type="text" required>
+      </div>
+      <div class="col-sm-6 form-group">
+        <input class="form-control" id="email" [(ngModel)]="Donation.email" name="email" placeholder="Email" type="email" required>
+      </div>
+      <div class="col-sm-6 form-group">
+          <input class="form-control" id="mobileNo" [(ngModel)]="Donation.contactNo" name="mobileNo" placeholder="Mobile no" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="transactionId" [(ngModel)]="Donation.transactionId" name="transactionId" placeholder="Transaction id" type="email" required>
+        </div>
+        <div class="col-sm-12 form-group">
+            <input class="form-control" id="amount" [(ngModel)]="Donation.amount" name="amount" placeholder="Amount" type="text" required>
+          </div>
+          
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-7 form-group">
+        <button class="btn pull-right" (click)="makeDonation()" type="submit">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<br>
+<footer class="text-center">
+    <a class="up-arrow" href="/home" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>Website created and designed by Azim Kazi <a data-toggle="tooltip" title="Visit w3schools"></a></p> 
+  </footer>

@@ -1,0 +1,90 @@
+<br><br><br><br>
+<div class="container">
+    <div>
+            <h2 style="text-align: center">Enter Adoption details</h2>
+    </div>
+    <hr>
+    <div class="col-md-2">
+      </div>
+  
+     <div class="col-md-8" >
+          <div class="form-group">
+                  <h3 style="text-align: center">Enter parent details</h3>
+
+
+                    <div class="form-group">
+                        <label for="">User id</label>
+                        <input [(ngModel)]="adoptionRecord.parent.uId" type="email" class="form-control" >
+                    </div>
+
+                  <br>
+                  <label for="">Full Name</label>
+                  <input [(ngModel)]="adoptionRecord.parent.uName" type="text" class="form-control">
+              </div>
+
+              
+  
+              <div class="form-group">
+                  <label for="">Email</label>
+                  <input [(ngModel)]="adoptionRecord.parent.uEmail" type="email" class="form-control" >
+              </div>
+  
+              
+              <div class="form-group">
+                  <label for="">Aadhar Number</label>
+                  <input [(ngModel)]="adoptionRecord.parent.uAadharNo" type="text" class="form-control">
+              </div>
+  
+              <div class="form-group">
+                  <label for="">Mobile Number</label>
+                  <input [(ngModel)]="adoptionRecord.parent.uPhoneNo" type="text" class="form-control">
+              </div>
+              
+
+              <div class="form-group">
+                  <h3 style="text-align: center">Enter child details</h3>
+                  <br>
+
+                  <div class="form-group">
+                    <label for="">Child id</label>
+                    <input [(ngModel)]="adoptionRecord.child.cId" type="email" class="form-control" >
+                </div>
+                  <label for="">Full Name</label>
+                  <input [(ngModel)]="adoptionRecord.child.cName" type="text" class="form-control">
+              </div>
+  
+              <div class="form-group">
+                  <label for="">Age</label>
+                  <input [(ngModel)]="adoptionRecord.child.cAge" type="text" class="form-control" >
+              </div>
+
+              <label for="">Gender</label>
+              <div class="container">
+                  
+                  <form>
+                    <div class="radio">
+                        <input type="radio" [(ngModel)]="adoptionRecord.child.cGender" name="gender" value="MALE" checked>Male<br>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" [(ngModel)]="adoptionRecord.child.cGender" name="gender" value="FEMALE">Female<br>
+                    </div>
+                  </form>
+                </div>
+                
+                <br><br>
+
+                <div class="form-group">
+                    <label for="">Date</label>
+                    <input [(ngModel)]="adoptionRecord.adoptionDate" type="date" class="form-control" >
+                </div>
+                
+                <br><br>
+                 
+                <div class="form-group" style="margin-top: 20px;">
+                    <button (click)="addAdoptionRecord()" class="btn btn-success">Add</button>
+                </div>
+
+     </div> 
+     
+     <div class="col-md-2">
+  </div>

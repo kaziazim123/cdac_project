@@ -1,0 +1,39 @@
+<div class="container">
+    <div><table style="height: 100px;"></table></div>
+    <hr>
+    <h2 style="text-align: center" >ADD CHILD</h2><br>
+    <h5 style="text-align: center;">Enter child details here</h5><br>
+    <div class="col-md-2">
+    </div>
+
+   <div class="col-md-8" >
+        <div class="form-group">
+                <label for="">AGe</label>
+                <input [(ngModel)]="child.cAge" type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="">Gender</label>
+                <br>
+                <!-- <input [(ngModel)]="child.cGender" type="email" class="form-control" > -->
+                <input [(ngModel)]="child.cGender" type="radio" ng-model="myVar" value="MALE">MALE
+                 <input [(ngModel)]="child.cGender" type="radio" ng-model="myVar" value="FEMALE">FEMALE
+            </div>
+
+            <div class="form-group">
+                <label for="">NAME</label>
+                <input [(ngModel)]="child.cName" type="password" class="form-control" >
+            </div>
+
+            
+            <hr>
+            <div class="form-group" style="margin-top: 20px;">
+                <button (click)="onRegister()" class="btn btn-success">Register</button>
+                <button (click)="onCancel()" class="btn btn-danger" style="margin-left: 10px;">Cancel</button>
+            </div>
+   </div> 
+
+   <div class="col-md-2">
+</div>
+
+</div>

@@ -1,0 +1,44 @@
+<br><br><br><br>
+<h1 style="text-align: center">Adoption Record</h1>
+<br>
+<table>
+  <tr>
+    <td style="width: 550px; text-align: center "><h3 style="color:brown;">Parent details</h3></td>
+    <td style="width: 650px; text-align: center"><h3 style="color: brown;">Child details</h3></td>
+  </tr>
+</table>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>user_id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Aadhar no</th>
+        <th>Mobile no</th>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Adoption date</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of adoptionrecord" >
+            <td>{{a.id}}</td>
+            <td>{{a.parent.uId}}</td>
+            <td>{{a.parent.uName}}</td>
+            <td>{{a.parent.uEmail}}</td>
+            <td>{{a.parent.uAadharNo}}</td>
+            <td>{{a.parent.uPhoneNo}}</td>
+            <td>{{a.child.cId}}</td>
+            <td>{{a.child.cName}}</td>
+            <td>{{a.child.cAge}}</td>
+            <td>{{a.child.cGender}}</td>
+            <td>{{a.adoptionDate}}</td>
+        </tr>    
+          
+    </tbody>
+  </table>
+</div>

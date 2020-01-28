@@ -1,0 +1,30 @@
+<br><br><br><br>
+<button type="button" class="btn btn-danger" (click)="backpage()">Back</button>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>status</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of children" >
+            <td>{{c.cId}}</td>
+            <td>{{c.cName}}</td>
+            <td>{{c.cAge}}</td>
+            <td>{{c.cGender}}</td>
+            <td>{{c.cStatus}}</td>
+            <td>
+                <button type="button" (click)="deleteChild(c.cId)"class="btn btn-danger">Delete</button>
+                </td>
+                <!-- <td><button type="button" (click)="updateChild(c.cId)"class="btn btn-danger">update</button></td> -->
+        </tr>    
+          
+    </tbody>
+  </table>
+</div>

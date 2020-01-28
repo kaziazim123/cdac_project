@@ -1,0 +1,34 @@
+
+<br><br><br><br>
+<button type="button" class="btn btn-danger" (click)="backpage()">Back</button>
+<br>
+<h1>user list</h1>
+<br>
+<div>
+    <table class="table table-bordered table-hover table-responsive">
+            <thead>
+                <tr style="font-weight: 800;">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>aadhar</th>
+                    <th>phone</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users">
+                    <td>{{user.uId}}</td>
+                    <td>{{user.uName}}</td>
+                    <td>{{user.uEmail}}</td>
+                    <td>{{user.uPassword}}</td>
+                    <td>{{user.uAadharNo}}</td>
+                    <td>{{user.uPhoneNo}}</td>
+                    <td>{{user.uRole}}</td>
+                    <td><a class="btn btn-primary" routerLink="/delete_user/{{user.uId}}">Delete</a></td>   
+                   <!-- <td><a class="btn btn-danger" (click)="DeleteUser()">Delete</a></td>                                                                -->
+                </tr>
+            </tbody>
+        </table>
+</div>

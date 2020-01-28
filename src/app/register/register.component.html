@@ -1,0 +1,59 @@
+<!-- <div style="height: 100px;"></div> -->
+
+<div class="container">
+    <div><table style="height: 100px;"></table></div>
+    <hr>
+    <h2 style="text-align: center" >Register</h2><br>
+    <h5 style="text-align: center;">Enter your details below</h5><br>
+    <div class="col-md-2">
+    </div>
+
+   <div class="col-md-8" >
+        <div class="form-group">
+                <label for="">Full Name</label>
+                <input [(ngModel)]="user.uName" type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="">Email</label>
+                <input [(ngModel)]="user.uEmail" type="email" class="form-control" >
+            </div>
+
+            <div class="form-group">
+                <label for="">Password</label>
+                <input [(ngModel)]="user.uPassword" type="password" class="form-control" >
+            </div>
+
+            <div class="form-group">
+                <label for="">Confirm Password</label>
+                <input [(ngModel)]="ConfirmPassword" type="password" class="form-control" >
+            </div>
+            
+            <div class="form-group">
+                <label for="">Aadhar Number</label>
+                <input [(ngModel)]="user.uAadharNo" type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="">Mobile Number</label>
+                <input [(ngModel)]="user.uPhoneNo" type="text" class="form-control">
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="">Enter Role</label>
+                <br>
+                <input [(ngModel)]="user.uRole" type="text" class="form-control">
+                <input [(ngModel)]="user.uRole" type="radio" ng-model="myVar" value="USER">USER
+            </div> -->
+            
+            <hr>
+            <div class="form-group" style="margin-top: 20px;">
+                <button (click)="onRegister()" class="btn btn-success">Register</button>
+                <button (click)="onCancel()" class="btn btn-danger" style="margin-left: 10px;">Cancel</button>
+            </div>
+   </div> 
+
+   <div class="col-md-2">
+</div>
+
+</div>
